@@ -247,8 +247,8 @@
 
     <repositories>
         <repository>
-            <id>mvnrepository-mvn-repo</id>
-            <name>mvnrepository-mvn-repo</name>
+            <id>Github Maven Repository</id>
+            <name>Github Maven Repository</name>
             <url>https://raw.githubusercontent.com/qhwr/mvnrepository/master/</url>
         </repository>
     </repositories>
