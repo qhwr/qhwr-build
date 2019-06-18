@@ -8,8 +8,8 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>Spring Cloud Dependencies</name>
-    <description>Spring Cloud Dependencies</description>
+    <name>Qhwr Spring Cloud Dependencies</name>
+    <description>Qhwr Spring Cloud Dependencies</description>
 
     <parent>
         <groupId>org.springframework.cloud</groupId>
