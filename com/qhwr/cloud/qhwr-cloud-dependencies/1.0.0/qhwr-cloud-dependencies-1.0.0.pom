@@ -251,11 +251,6 @@
             <name>Github Release Repository</name>
             <url>https://raw.githubusercontent.com/qhwr/qhwr-build/master/</url>
         </repository>
-        <snapshotRepository>
-            <id>github-snapshots</id>
-            <name>Github Snapshots Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/qhwr-build/snapshots/</url>
-        </snapshotRepository>
     </distributionManagement>
 
     <repositories>
