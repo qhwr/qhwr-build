@@ -245,14 +245,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <distributionManagement>
-        <repository>
-            <id>github-release</id>
-            <name>Github Release Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/qhwr-build/master/</url>
-        </repository>
-    </distributionManagement>
-
     <repositories>
         <repository>
             <id>mvnrepository-mvn-repo</id>
