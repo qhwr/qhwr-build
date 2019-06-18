@@ -7,7 +7,8 @@
 ```xml
 <repositories>
     <repository>
-        <id>Github Maven Build Repository</id>
+        <id>github-dependencies</id>
+        <name>Github Maven Dependencies</name>
         <url>https://raw.githubusercontent.com/qhwr/qhwr-build/dependencies</url>
     </repository>
 </repositories>
