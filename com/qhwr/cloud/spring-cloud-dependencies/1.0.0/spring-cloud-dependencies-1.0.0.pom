@@ -101,11 +101,11 @@
                 <version>${spring-boot-druid.version}</version>
             </dependency>
             <!--Spring Boot Admin Client -->
-            <!--<dependency>
+            <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
-            </dependency>-->
+            </dependency>
             <!-- Apache Commons-io -->
             <dependency>
                 <groupId>commons-io</groupId>
@@ -263,7 +263,7 @@
                     <!-- disable webpage processing -->
                     <noJekyll>true</noJekyll>
                     <!-- matches distribution management repository url above -->
-                    <outputDirectory>${project.build.directory}/spring-cloud-dependencies</outputDirectory>
+                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <!-- remote branch name -->
                     <branch>refs/heads/release</branch>
                     <includes>
@@ -288,7 +288,7 @@
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
                     <altDeploymentRepository>
-                        internal.repo::default::file://${project.build.directory}/spring-cloud-dependencies
+                        internal.repo::default::file://${project.build.directory}/mvn-repo
                     </altDeploymentRepository>
                 </configuration>
             </plugin>
