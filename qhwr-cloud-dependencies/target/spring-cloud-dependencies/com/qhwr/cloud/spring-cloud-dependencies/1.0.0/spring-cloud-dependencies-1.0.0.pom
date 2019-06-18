@@ -44,6 +44,8 @@
         <qhwr-fuiou.version>1.0.0</qhwr-fuiou.version>
         <!-- 插件 -->
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
+
+        <github.global.server>github</github.global.server>
     </properties>
 
     <dependencyManagement>
@@ -99,11 +101,11 @@
                 <version>${spring-boot-druid.version}</version>
             </dependency>
             <!--Spring Boot Admin Client -->
-            <dependency>
+            <!--<dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
-            </dependency>
+            </dependency>-->
             <!-- Apache Commons-io -->
             <dependency>
                 <groupId>commons-io</groupId>
@@ -233,12 +235,12 @@
         <repository>
             <id>github-release</id>
             <name>Github Release Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/spring-cloud-dependencies/release/</url>
+            <url>https://raw.githubusercontent.com/qhwr/qhwr-build/master/</url>
         </repository>
         <snapshotRepository>
             <id>github-snapshots</id>
             <name>Github Snapshots Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/spring-cloud-dependencies/release/</url>
+            <url>https://raw.githubusercontent.com/qhwr/qhwr-build/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -250,4 +252,46 @@
         </repository>
     </repositories>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <configuration>
+                    <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
+                    <!-- disable webpage processing -->
+                    <noJekyll>true</noJekyll>
+                    <!-- matches distribution management repository url above -->
+                    <outputDirectory>${project.build.directory}/spring-cloud-dependencies</outputDirectory>
+                    <!-- remote branch name -->
+                    <branch>refs/heads/release</branch>
+                    <includes>
+                        <include>**/*</include>
+                    </includes>
+                    <!-- github repo name -->
+                    <repositoryName>qhwr-build</repositoryName>
+                    <!-- github username  -->
+                    <repositoryOwner>qhwr</repositoryOwner>
+                </configuration>
+                <executions>
+                    <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>deploy</phase>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <altDeploymentRepository>
+                        internal.repo::default::file://${project.build.directory}/spring-cloud-dependencies
+                    </altDeploymentRepository>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
