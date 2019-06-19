@@ -316,6 +316,16 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>2.1.5.RELEASE</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
 
