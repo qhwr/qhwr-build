@@ -91,12 +91,6 @@
                 <groupId>com.netflix.archaius</groupId>
                 <artifactId>archaius-core</artifactId>
                 <version>${archaius-core.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-lang</groupId>
-                        <artifactId>commons-lang</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -154,12 +148,6 @@
                 <artifactId>json-lib</artifactId>
                 <classifier>jdk15</classifier>
                 <version>${json-lib.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-lang</groupId>
-                        <artifactId>commons-lang</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
