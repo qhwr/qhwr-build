@@ -93,7 +93,7 @@
                 <version>${archaius-core.version}</version>
                 <exclusions>
                     <exclusion>
-                        <groupId>org.apache.commons</groupId>
+                        <groupId>commons-lang</groupId>
                         <artifactId>commons-lang</artifactId>
                     </exclusion>
                 </exclusions>
@@ -156,7 +156,7 @@
                 <version>${json-lib.version}</version>
                 <exclusions>
                     <exclusion>
-                        <groupId>org.apache.commons</groupId>
+                        <groupId>commons-lang</groupId>
                         <artifactId>commons-lang</artifactId>
                     </exclusion>
                 </exclusions>
