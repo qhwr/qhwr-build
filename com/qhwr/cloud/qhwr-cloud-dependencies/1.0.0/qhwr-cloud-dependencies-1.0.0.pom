@@ -255,7 +255,12 @@
             <dependency>
                 <groupId>com.qhwr.third</groupId>
                 <artifactId>qhwr-fuiou</artifactId>
-                <version>${qhwr-fuiou.version}</version>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qhwr.third</groupId>
+                <artifactId>qhwr-yeepay</artifactId>
+                <version>1.0.0</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.gson</groupId>
@@ -270,6 +275,10 @@
             <id>github-repository</id>
             <name>Github Maven Repository</name>
             <url>https://raw.githubusercontent.com/qhwr/mvnrepository/master</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </releases>
         </repository>
     </repositories>
 
