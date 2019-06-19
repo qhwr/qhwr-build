@@ -54,7 +54,8 @@
 
         <!-- 插件 -->
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
-        <maven-plugin-deploy.version>2.8.2</maven-plugin-deploy.version>
+        <spring-boot-maven.version>3.8.1</spring-boot-maven.version>
+        <maven-deploy.version>2.8.2</maven-deploy.version>
 
     </properties>
 
@@ -293,7 +294,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>${maven-plugin-deploy.version}</version>
+                <version>${maven-deploy.version}</version>
                 <configuration>
                     <altDeploymentRepository>
                         internal.repo::default::file://${project.build.directory}/mvn-repo
@@ -307,6 +308,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
