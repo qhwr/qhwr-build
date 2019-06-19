@@ -307,16 +307,4 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>github-repository</id>
-            <name>Github Maven Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/mvnrepository/master/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
-        </repository>
-    </repositories>
-
 </project>
