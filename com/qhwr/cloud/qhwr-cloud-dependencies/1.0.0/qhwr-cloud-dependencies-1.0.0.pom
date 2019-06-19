@@ -50,8 +50,6 @@
         <shiro-thymeleaf.version>1.2.1</shiro-thymeleaf.version>
         <aliyun-saf.version>1.0.2</aliyun-saf.version>
         <aliyun-core.version>4.1.1</aliyun-core.version>
-        <qhwr-fuiou.version>1.0.0</qhwr-fuiou.version>
-        <qhwr-yeepay.version>1.0.0</qhwr-yeepay.version>
         <gson.version>2.8.2</gson.version>
 
         <!-- 插件 -->
@@ -254,16 +252,6 @@
                 <version>${aliyun-core.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.qhwr.third</groupId>
-                <artifactId>qhwr-fuiou</artifactId>
-                <version>${qhwr-fuiou.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qhwr.third</groupId>
-                <artifactId>qhwr-yeepay</artifactId>
-                <version>${qhwr-yeepay.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
@@ -271,17 +259,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>github-repository</id>
-            <name>Github Maven Repository</name>
-            <url>https://raw.githubusercontent.com/qhwr/mvnrepository/master/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>
