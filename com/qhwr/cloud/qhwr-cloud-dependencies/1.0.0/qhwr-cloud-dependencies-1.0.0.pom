@@ -255,17 +255,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.qhwr.third</groupId>
-                <artifactId>qhwr-fuiou</artifactId>
-                <version>${qhwr-fuiou.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qhwr.third</groupId>
-                <artifactId>qhwr-yeepay</artifactId>
-                <version>${qhwr-yeepay.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
