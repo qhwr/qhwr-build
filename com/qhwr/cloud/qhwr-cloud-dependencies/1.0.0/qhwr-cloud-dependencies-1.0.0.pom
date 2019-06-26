@@ -138,12 +138,6 @@
                 <version>${aliyun-oss.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.alicp.jetcache</groupId>
-                <artifactId>jetcache-starter-redis</artifactId>
-                <version>${jetcache-starter-redis.version}</version>
-            </dependency>
-
             <!--Spring Boot Admin Client -->
             <dependency>
                 <groupId>de.codecentric</groupId>
