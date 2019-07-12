@@ -22,7 +22,7 @@
 
         <spring-cloud-dependencies.version>Greenwich.SR1</spring-cloud-dependencies.version>
         <spring-boot-dependencies.version>2.1.5.RELEASE</spring-boot-dependencies.version>
-        <spring-cloud-alibaba-dependencies.version>0.9.0.RELEASE</spring-cloud-alibaba-dependencies.version>
+        <spring-cloud-alibaba-dependencies.version>0.9.1.BUILD-SNAPSHOT</spring-cloud-alibaba-dependencies.version>
         <spring-cloud-qhwr-dependencies.version>1.0.0</spring-cloud-qhwr-dependencies.version>
         <spring-cloud-netflix-hystrix.version>2.1.1.RELEASE</spring-cloud-netflix-hystrix.version>
         <archaius-core.version>0.7.6</archaius-core.version>
@@ -329,5 +329,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-snapshot</id>
+            <name>Spring Snapshot Repository</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
