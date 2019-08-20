@@ -117,14 +117,6 @@
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${spring-cloud-openfeign.version}</version>
             </dependency>
-            <!--
-           Spring Cloud Alibaba Nacos 注入配置文件 启动类添加注解，自动读取Nacos数据源配置文件
-           -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-                <version>${spring-boot-nacos-config.version}</version>
-            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
