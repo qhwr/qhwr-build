@@ -37,7 +37,7 @@
         <commons-collections.version>3.2.2</commons-collections.version>
         <poi.version>3.17</poi.version>
         <json-lib.version>2.4</json-lib.version>
-        <fastjson.version>1.2.54</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <qiniu.version>7.2.17</qiniu.version>
         <jackson-xml-databind.version>0.6.2</jackson-xml-databind.version>
         <jackson-databind.version>2.9.7</jackson-databind.version>
