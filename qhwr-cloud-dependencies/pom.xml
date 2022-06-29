@@ -35,7 +35,7 @@
         <spring-boot-admin.version>2.1.5</spring-boot-admin.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-collections.version>3.2.2</commons-collections.version>
-        <poi.version>3.17</poi.version>
+        <poi.version>4.1.1</poi.version>
         <json-lib.version>2.4</json-lib.version>
         <fastjson.version>1.2.54</fastjson.version>
         <qiniu.version>7.2.17</qiniu.version>
