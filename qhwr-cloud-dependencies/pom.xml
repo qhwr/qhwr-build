@@ -46,7 +46,7 @@
         <shedlock.version>2.2.0</shedlock.version>
         <retrofit.version>2.0.0-beta4</retrofit.version>
         <guava.version>18.0</guava.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.9.1</shiro.version>
         <shiro-thymeleaf.version>1.2.1</shiro-thymeleaf.version>
         <aliyun-saf.version>1.0.2</aliyun-saf.version>
         <aliyun-core.version>4.1.1</aliyun-core.version>
